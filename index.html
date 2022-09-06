@@ -1,0 +1,1196 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>CV - Nelson Ricardo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+    integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css"
+    integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========================================================================== */
+
+@page {
+  size: A4 portrait;
+}
+
+@media print {
+  a {
+    display: initial;
+  }
+}
+
+:root {
+  --color-bg: #e9e8ea;
+  --color-primary: #e9e8ea;
+  --color-secondary: #101e32;
+  --color-secondary-alpha: #101e329f;
+  --color-skill-level: var(--color-primary);
+  --hex-size: 3rem;
+  --icon-size: 1.5rem;
+}
+
+html,
+body {
+  width: 210mm;
+  height: 297mm;
+  font-size: 12px;
+}
+
+body {
+  display: grid;
+  color: var(--color-secondary);
+  background-color: var(--color-bg);
+  font-family: Roboto, sans-serif;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "sidebar main";
+}
+
+main {
+  grid-area: main;
+  padding: 2rem 0 2rem 2rem;
+  --color-hexagon: var(--color-secondary);
+  --color-icon: var(--color-secondary);
+}
+
+aside {
+  grid-area: sidebar;
+  padding: 2rem 0 2rem 1rem;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  --color-hexagon: var(--color-primary);
+  --color-icon: var(--color-secondary);
+}
+
+aside a {
+  color: var(--color-primary);
+}
+
+aside li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+aside li>div {
+  padding: 0 0.5rem;
+}
+
+aside .heading {
+  --color-icon: var(--color-primary);
+  --hex-size: 3rem;
+  --icon-size: 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+summary {
+  font-size: 1rem;
+  line-height: 1.125;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+i[class^="fa-"] {
+  color: var(--color-icon, white);
+  font-size: var(--icon-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  page-break-after: avoid;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+h3 {
+  border: none;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  position: relative;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+sup {
+  display: inline-block;
+  --color-icon: none;
+  --icon-size: none;
+}
+
+.dates {
+  font-size: .9rem;
+  margin-bottom: 5px;
+  --color-icon: none;
+  --icon-size: none;
+}
+
+.dates>i {
+  margin: .25rem;
+  opacity: 0.7;
+}
+
+.profile ul>li {
+  display: flex;
+  margin: .5rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile ul>li>div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: fit-content;
+  position: relative;
+  padding: 0 2rem 0 1rem;
+  background-color: var(--color-secondary);
+}
+
+.profile ul>li>div:first-of-type>.fa-solid {
+  width: 1rem;
+  margin: 0 .5rem;
+  text-align: center;
+}
+
+.profile ul>li>div:last-of-type {
+  padding: 0 1rem;
+  color: var(--color-secondary);
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  --hex-size: none;
+  --color-hexagon: var(--color-primary);
+}
+
+.name {
+  color: #fff;
+  text-align: center;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+.name>span:first-of-type {
+  color: var(--color-primary);
+  font-weight: 300;
+}
+
+.title {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.heading>h3 {
+  padding: 0 1rem 0 0.5rem;
+}
+
+.heading>hr {
+  flex: 1;
+  border: none;
+  border-bottom: 2px solid var(--color-icon);
+}
+
+.heading>h4 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+}
+
+.heading>h4>a {
+  font-size: .9rem;
+  opacity: 0.6;
+}
+
+.heading>.hex-icon {
+  --hex-size: 3rem;
+  --icon-size: 1.25rem;
+}
+
+.work .company,
+.education .institution {
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.work .position {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.work .summary {
+  margin: 8px 0 16px 0;
+}
+
+.work .highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  font-size: .5rem;
+}
+
+.work .highlights>.stack {
+  color: white;
+  display: inline;
+  padding: 2px 8px;
+  transform: skewX(-15deg);
+  border-radius: 8px 0 8px 0;
+  background-color: var(--color-secondary);
+}
+
+.skills>h5 {
+  margin-top: 1rem;
+  opacity: 0.6;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 1rem 0 0.5rem;
+}
+
+.skill>h3 {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.skill-level {
+  height: .5rem;
+  width: 1rem;
+  display: inline-block;
+  transform: skewX(-45deg);
+  opacity: .25;
+  background-color: var(--color-skill-level);
+}
+
+.skill-level-active {
+  opacity: 1;
+}
+
+.hex {
+  width: var(--hex-size, 2rem);
+  height: var(--hex-size, 2rem);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center center;
+  -webkit-mask-position: center center;
+  background-color: var(--color-hexagon, --color-primary);
+}
+
+.hex-border {
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTA2LjQ0IDEyMi44OCI+CiAgPHBhdGggZmlsbD0iY3VycmVudENvbG9yIgogICAgZD0iTTU1LjA2LDEuMDdsNTEuMzcsMjkuNjZ2NjEuNDNsLTUzLjIyLDMwLjczTDAsOTIuMTVWMzAuNzNMNTMuMjIsMEw1NS4wNiwxLjA3TDU1LjA2LDEuMDd6IE03Ni4xMywyMS43NEw1My4yMiw4LjUxIEw3LjM5LDM0Ljk3djUyLjk0bDQ1LjgzLDI2LjQ2bDQ1LjgzLTI2LjQ2VjM0Ljk3TDc2LjEzLDIxLjc0TDc2LjEzLDIxLjc0eiIgLz4KPC9zdmc+Cg==");
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTA2LjQ0IDEyMi44OCI+CiAgPHBhdGggZmlsbD0iY3VycmVudENvbG9yIgogICAgZD0iTTU1LjA2LDEuMDdsNTEuMzcsMjkuNjZ2NjEuNDNsLTUzLjIyLDMwLjczTDAsOTIuMTVWMzAuNzNMNTMuMjIsMEw1NS4wNiwxLjA3TDU1LjA2LDEuMDd6IE03Ni4xMywyMS43NEw1My4yMiw4LjUxIEw3LjM5LDM0Ljk3djUyLjk0bDQ1LjgzLDI2LjQ2bDQ1LjgzLTI2LjQ2VjM0Ljk3TDc2LjEzLDIxLjc0TDc2LjEzLDIxLjc0eiIgLz4KPC9zdmc+Cg==");
+}
+
+.hex-solid {
+  transform: scale(0.95);
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzMuMjA1MDgwNzU2ODg3NzIgMjAwIj4KICA8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiCiAgICBkPSJNODYuNjAyNTQwMzc4NDQzODYgMEwxNzMuMjA1MDgwNzU2ODg3NzIgNTBMMTczLjIwNTA4MDc1Njg4NzcyIDE1MEw4Ni42MDI1NDAzNzg0NDM4NiAyMDBMMCAxNTBMMCA1MFoiPjwvcGF0aD4KPC9zdmc+Cg==");
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzMuMjA1MDgwNzU2ODg3NzIgMjAwIj4KICA8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiCiAgICBkPSJNODYuNjAyNTQwMzc4NDQzODYgMEwxNzMuMjA1MDgwNzU2ODg3NzIgNTBMMTczLjIwNTA4MDc1Njg4NzcyIDE1MEw4Ni42MDI1NDAzNzg0NDM4NiAyMDBMMCAxNTBMMCA1MFoiPjwvcGF0aD4KPC9zdmc+Cg==");
+}
+
+.hex-absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hex-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  --hex-size: 2rem;
+  --icon-size: 1rem;
+}
+
+.hex-icon>i[class^="fa-"] {
+  position: absolute;
+}
+</style>
+</head>
+
+<body resume>
+
+  <aside>
+    <div class="photo">
+      <div class="hex hex-border hex-absolute"></div>
+      <div class="hex hex-solid">
+          <img src="https://picsum.photos/200" alt="photo">
+      </div>
+    </div>
+
+    <div class="name">
+      <span class="firstName">Nelson</span> <span class="lastName">Ricardo</span>
+    </div>
+
+    <div class="title">
+      Senior Software Engineer
+    </div>
+
+    <section class="contacts">
+      <div class="heading">
+        <div class="hex-icon">
+          <div class="hex hex-border"></div>
+          <i class="fa-solid fa-id-badge"></i>
+        </div>
+        <h3>CONTACT ME</h3>
+        <hr />
+      </div>
+
+      <ul>
+        <li>
+          <div class="hex-icon">
+            <div class="hex hex-solid"></div>
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>
+            +351 966 863 190
+          </div>
+        </li>
+        <li>
+          <div class="hex-icon">
+            <div class="hex hex-solid"></div>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div>
+            <a href="mailto:nelson.s.ricardo@gmail.com">nelson.s.ricardo@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <div class="hex-icon">
+            <div class="hex hex-solid"></div>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div>
+            <a target="_blank" href="https://gitconnected.com/nricardo/resume?theme=zion">
+              gitconnected/nricardo
+              <sup>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </sup>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="hex-icon">
+            <div class="hex hex-solid"></div>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            Lisboa, Portugal
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <div class="heading">
+        <div class="hex-icon">
+          <div class="hex hex-border"></div>
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3>SKILLS</h3>
+        <hr />
+      </div>
+
+<h5>Web Development</h5>         <div class="skill">
+          <h6>React</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>Angular.js</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>HTML5</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>CSS3</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>XML / XSLT</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>NodeJS</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>Express.js</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>REST</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+          </div>
+        </div>
+<h5>Coding</h5>         <div class="skill">
+          <h6>JavaScript</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>TypeScript</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>Java</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>C/C++</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>PHP</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>Shell scripting (Bash)</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+<h5>Mobile Dev</h5>         <div class="skill">
+          <h6>React Native</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+<h5>Databases</h5>         <div class="skill">
+          <h6>PostgreSQL</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>mySQL</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>SQL Server</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>MongoDB</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>ElasticSearch</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>DSE Graph | Gremlin</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+<h5>CI/CD</h5>         <div class="skill">
+          <h6>Docker</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>Kubernetes</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>GitLab Pipelines</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>Jenkins</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+<h5>SCM</h5>         <div class="skill">
+          <h6>GIT</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>SVN</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h6>IBM Rational ClearCase</h6>
+          <div>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level skill-level-active"></span>
+            <span class="skill-level "></span>
+          </div>
+        </div>
+    </section>
+
+    <section class="social">
+      <div class="heading">
+        <div class="hex-icon">
+          <div class="hex hex-border"></div>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <h3>CONNECT</h3>
+        <hr />
+      </div>
+
+      <ul>
+        <li>
+          <div class="hex-icon">
+            <div class="hex hex-solid"></div>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/nsricardo">
+            linkedin.com/in/nsricardo
+            <sup>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </sup>
+          </a>
+        </li>
+        <li>
+          <div class="hex-icon">
+            <div class="hex hex-solid"></div>
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <a rel="noreferrer" target="_blank" href="https://github.com/nricardo">
+            github.com/nricardo
+            <sup>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </sup>
+          </a>
+        </li>
+        <li>
+          <div class="hex-icon">
+            <div class="hex hex-solid"></div>
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+          <a rel="noreferrer" target="_blank" href="https://github.com/nricardo/resume/cv.pdf" title="Download as PDF">
+            RESUME
+            <sup>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </sup>
+          </a>
+        </li>
+      </ul>
+      </div>
+    </section>
+  </aside>
+
+  <main>
+    <section class="profile">
+      <div class="heading">
+        <div class="hex-icon">
+          <div class="hex hex-border"></div>
+          <i class="fa-solid fa-id-badge"></i>
+        </div>
+        <h3>PROFILE</h3>
+        <hr />
+      </div>
+
+      <summary><p> :: 👨‍💻 Experienced and motivated software engineer focused in web technologies :: <br>Design, architecture and implementation of web and mobile applications using the latest tools and best software practices.<br>Advocate of the Javascript language and its frameworks, currently focused in NodeJS and React / React Native.<br><br>Knowledge in software development processes, from requirements and analysis throughout design, implementation and testing.<br>Worked under R&amp;D environment, doing requirement analysis and writing technical project documentation.<br><br>Professional experience in OO programming languages, such as C/C++ and Java, but always open to learning new ones and new software processes and methodologies.</p>
+</summary>
+    </section>
+
+    <section class="work">
+      <div class="heading">
+        <div class="hex-icon">
+          <div class="hex hex-border"></div>
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <h3>WORK EXPERIENCE</h3>
+        <hr />
+      </div>
+
+      <div class="company">
+
+        <div class="heading">
+          <h4>
+            Truphone️
+            <a href="https://www.truphone.com/" target="_blank">https://www.truphone.com/</a>
+          </h4>
+
+          <div class="dates">
+            <i class="fa-solid fa-calendar-days"></i>
+            Apr 2018 - Sep 2022
+          </div>
+        </div>
+
+        <div class="position">Senior Software Engineer | Fullstack Developer</div>
+        <div class="summary"><ul>
+<li><strong>RSP Portal</strong> - Lead the architecture, design and implementation of Truphone&#39;s first web portal for the <a href="https://web.truphone.com/telecoms/consumer-rsp/">RSP platform</a> using ReactJS, including the backend service (BFF) responsible to route access to the different internal layers of microservices. Implemented the security layer using Keycloak IAM solution as well the auditing system when accessing the service. Responsible for the design, implemention and testing of a full-fledged UI component library from the ground up with the collaboration of the UX/UI team, making Truphone&#39;s brand and vision integrate into our products, making easy the transition and adoption of React components into new projects/portals. Contributed and helped on the early adoption of migrating services to AWS cloud infrastracture, discussing best-practices and architectural approaches for each service that best matches our goals.</li>
+<li><strong>My Truphone App</strong> - Bootstrapped 1st Truphone&#39;s mobile application for purchasing global data plans and installing them on <strong>eSIM</strong> capable devices (iOS and Android) - Help projects/services moving towards a microservices architecture.</li>
+</ul>
+</div>
+
+        <div class="highlights">
+          <div class="stack">React</div>
+          <div class="stack">MUI</div>
+          <div class="stack">Javascript</div>
+          <div class="stack">Typescript</div>
+          <div class="stack">Storybook</div>
+          <div class="stack">Jest</div>
+          <div class="stack">Rollup</div>
+          <div class="stack">Webpack</div>
+          <div class="stack">HTML5</div>
+          <div class="stack">SCSS</div>
+          <div class="stack">Graylog</div>
+          <div class="stack">Prometheus</div>
+          <div class="stack">Grafana</div>
+          <div class="stack">AWS</div>
+          <div class="stack">React Native</div>
+          <div class="stack">Redux</div>
+          <div class="stack">Redux Saga</div>
+          <div class="stack">NodeJS</div>
+          <div class="stack">Loopback</div>
+          <div class="stack">ExpressJS</div>
+          <div class="stack">Docker</div>
+          <div class="stack">Git</div>
+          <div class="stack">Xcode</div>
+          <div class="stack">Android Studio</div>
+        </div>
+      </div>
+      <div class="company">
+
+        <div class="heading">
+          <h4>
+            CAP-HPI
+            <a href="https://www.cap-hpi.com/" target="_blank">https://www.cap-hpi.com/</a>
+          </h4>
+
+          <div class="dates">
+            <i class="fa-solid fa-calendar-days"></i>
+            Jan 2018 - Apr 2018
+          </div>
+        </div>
+
+        <div class="position">Senior Software Engineer | Fullstack Developer</div>
+        <div class="summary"><p>Improve and implement new features on CAP-HPI&#39;s car evaluation sites (<a href="https://hpivaluations.com/">https://hpivaluations.com/</a>).<br />[Nearshore project (fullstack)]</p>
+</div>
+
+        <div class="highlights">
+          <div class="stack">HTML5</div>
+          <div class="stack">CSS3</div>
+          <div class="stack">SASS/SCSS</div>
+          <div class="stack">React</div>
+          <div class="stack">DustJS</div>
+          <div class="stack">Twig.js</div>
+          <div class="stack">Grunt</div>
+          <div class="stack">Webpack</div>
+          <div class="stack">Babel</div>
+          <div class="stack">PostCSS</div>
+          <div class="stack">NodeJS</div>
+          <div class="stack">ExpressJS</div>
+          <div class="stack">Kraken-js</div>
+          <div class="stack">JQuery</div>
+          <div class="stack">GIT</div>
+        </div>
+      </div>
+      <div class="company">
+
+        <div class="heading">
+          <h4>
+            BNP Paribas Portugal
+            <a href="http://www.bnpparibas.pt" target="_blank">http://www.bnpparibas.pt</a>
+          </h4>
+
+          <div class="dates">
+            <i class="fa-solid fa-calendar-days"></i>
+            Jun 2017 - Dec 2017
+          </div>
+        </div>
+
+        <div class="position">Senior Software Engineer / Web Developer</div>
+        <div class="summary"><p>Design and implementation of a software solution for staff management and project planning (time allocation, skill management, ...).</p>
+</div>
+
+        <div class="highlights">
+          <div class="stack">AngularJS</div>
+          <div class="stack">HTML5</div>
+          <div class="stack">CSS3</div>
+          <div class="stack">SASS/SCSS</div>
+          <div class="stack">Material Design</div>
+          <div class="stack">ES6</div>
+          <div class="stack">D3.js</div>
+          <div class="stack">Webpack</div>
+          <div class="stack">GIT</div>
+          <div class="stack">NodeJS</div>
+          <div class="stack">ExpressJS</div>
+          <div class="stack">DSE Graph</div>
+          <div class="stack">Gremlin</div>
+        </div>
+      </div>
+      <div class="company">
+
+        <div class="heading">
+          <h4>
+            Media Capital Digital / TVI
+            <a href="http://www.tvi.iol.pt/" target="_blank">http://www.tvi.iol.pt/</a>
+          </h4>
+
+          <div class="dates">
+            <i class="fa-solid fa-calendar-days"></i>
+            Sep 2016 - Jun 2017
+          </div>
+        </div>
+
+        <div class="position">Senior Software Engineer / Web Developer</div>
+        <div class="summary"><p>Improvements on the backend services/dababases and the BackOffice (BO) frontend components.<br> Build of a statistical/monitoring system and report generation for the overhall and day-to-day BO operations.<br>Implementation of a new frontend solution for creating clips from HLS (Live) streams.<br>Design and integration of the SSO authentication system, using Oauth2.</p>
+</div>
+
+        <div class="highlights">
+          <div class="stack">AngularJS</div>
+          <div class="stack">HTML5</div>
+          <div class="stack">CSS3</div>
+          <div class="stack">SASS/SCSS</div>
+          <div class="stack">Bootstrap</div>
+          <div class="stack">ES6</div>
+          <div class="stack">Webpack</div>
+          <div class="stack">SVN</div>
+          <div class="stack">NodeJS</div>
+          <div class="stack">Java</div>
+          <div class="stack">Java Spring Framework</div>
+          <div class="stack">MySQL</div>
+          <div class="stack">MongoDB</div>
+          <div class="stack">ElasticSearch</div>
+        </div>
+      </div>
+      <div class="company">
+
+        <div class="heading">
+          <h4>
+            PHC
+            <a href="http://www.phcsoftware.com/" target="_blank">http://www.phcsoftware.com/</a>
+          </h4>
+
+          <div class="dates">
+            <i class="fa-solid fa-calendar-days"></i>
+            Sep 2014 - Aug 2016
+          </div>
+        </div>
+
+        <div class="position">Software Engineer / Web Developer</div>
+        <div class="summary"><p><u><b><a href='https://www.drivefx.net' target='_blank'>Drive FX</a></b></u><br>Implementation from the ground-up of the new platform / framework the FX project composed by Billing (invoicing), Business (management) and the POS components.</p>
+</div>
+
+        <div class="highlights">
+          <div class="stack">AngularJS</div>
+          <div class="stack">HTML5</div>
+          <div class="stack">CSS3</div>
+          <div class="stack">SASS/SCSS</div>
+          <div class="stack">Bootstrap</div>
+          <div class="stack">ES6</div>
+          <div class="stack">TypeScript</div>
+          <div class="stack">Grunt</div>
+          <div class="stack">Git</div>
+          <div class="stack">VB.NET</div>
+          <div class="stack">Visual Studio 2012</div>
+        </div>
+      </div>
+      <div class="company">
+
+        <div class="heading">
+          <h4>
+            Coriant
+            <a href="https://www.coriant.com" target="_blank">https://www.coriant.com</a>
+          </h4>
+
+          <div class="dates">
+            <i class="fa-solid fa-calendar-days"></i>
+            Apr 2010 - Jul 2014
+          </div>
+        </div>
+
+        <div class="position">System Architect</div>
+        <div class="summary"><p><u><b>hiT7500</b> project</u><br>Specification and integration of 10G/40G/100G new generation transponders from hiT7300 platform / product.<br>Responsible for the technical specification and description regarding the characteristics and the capabilities of optical components supported by the system and their configuration settings.<br><u><b>hiT7300</b> project</u> <br>Functional specification writer for the configuration management aspects of the northbound interfaces used by network management systems.<br>Responsible for the implementation of a new concept for writing the specification documentation using a DSL (Domain Specific Language) called YANG.<br>Design of the entire framework used for the automatic productions that produces releases (issues) of the mentioned documentation in PDF format and an online version using WordPress as a CMS platform. Jenkins was the choice as a CI (Continuous Integration) tool. The framework uses ANT to give support for the building process and SVN as the SCM (Software Configuration Tool).<br>The framework is responsible for the syntax verification of YANG modules, schema generation (XSD’s, XML’s, RelaxNg and Schematron), HTML transformation, publishing and deployment of the resulting HTML files into CMS server.<br> <u><b>NGOA</b> project</u><br>Responsible for the research and gathering of technical, functional requirements as well as defining the management interfaces of next generation ONUs.<br>Analysis on the business perspective, for home and business use cases, where the product would have practical and efficient application.<br>Investigation on hardware equipment between chipsets and their interfaces in order to meet the specified requirements.<br>Development and proposal of several solutions of HW (designs) that satisfied the two business areas.</p>
+</div>
+
+        <div class="highlights">
+          <div class="stack">WordPress (as CMS platform) + plugin development</div>
+          <div class="stack">PHP, HTML5, CSS3, LESS, Bootstrap framework, JavaScript/jQuery, XML, XSLT</div>
+          <div class="stack">PrinceXML (for PDF generation)</div>
+          <div class="stack">YANG (http://www.rfc-editor.org/rfc/rfc6020.txt) (DSL language) + pyang (YANG validator tool)</div>
+          <div class="stack">Apache Ant (Build tool/library)</div>
+          <div class="stack">Subversion (SVN)</div>
+          <div class="stack">Jenkins (Continuous Integration Server)</div>
+        </div>
+      </div>
+      <div class="company">
+
+        <div class="heading">
+          <h4>
+            Wincor Nixdorf Portugal
+            <a href="" target="_blank"></a>
+          </h4>
+
+          <div class="dates">
+            <i class="fa-solid fa-calendar-days"></i>
+            Oct 2008 - Mar 2010
+          </div>
+        </div>
+
+        <div class="position">Software Engineer</div>
+        <div class="summary"><p><u><b>TPLinux</b> project</u><br>Development of new features and maintenance of the POS as well as the back-office applications.<br><u><b>Proview</b> project</u><br>PoC (Prof of Concept) and Roll-Out of the monitoring of ATM&#39;s agent.<br>Manage incidents / problems in the customer&#39;s ATM network with WN. Establishing correlations and filters for early identification of anomalies in HW. Design and integration with external tools (SIBS / EMIS).</p>
+</div>
+
+        <div class="highlights">
+          <div class="stack">C</div>
+          <div class="stack">C++</div>
+          <div class="stack">Java</div>
+          <div class="stack">HTML5</div>
+          <div class="stack">CSS3</div>
+          <div class="stack">PHP</div>
+          <div class="stack">Wordpress</div>
+          <div class="stack">MySQL</div>
+          <div class="stack">Apache Web Server (LAMP)</div>
+        </div>
+      </div>
+      <div class="company">
+
+        <div class="heading">
+          <h4>
+            Siemens / Nokia Siemens Networks
+            <a href="https://www.siemens.com/global/en/home.html" target="_blank">https://www.siemens.com/global/en/home.html</a>
+          </h4>
+
+          <div class="dates">
+            <i class="fa-solid fa-calendar-days"></i>
+            Jan 2005 - Sep 2008
+          </div>
+        </div>
+
+        <div class="position">Software Engineer</div>
+        <div class="summary"><p><u><b>OCU / MTS</b> project</u><br>Analysis, design and development the embedded application (Linux OS) for the control and management of devices (ASICs/FPGAs) and optical modules (lasers) used in DWDM optical networks.<br>Test specification and integration between SW and HW.<br>Customer support in the optimization and correction of deployed systems on their networks.<br> Improvements of the production environment and code generation (Makefiles / Scripts).<br><u><b>INOV</b> project</u><br>Submission of an Invention Report (patent candidate) of a control algorithm for spectral power distribution used in optical DGE modules with the title &#39;Efficient Signal Equalization via Real Time Adaptation of Gaussian Filters&#39;.</p>
+</div>
+
+        <div class="highlights">
+          <div class="stack">C/C++</div>
+          <div class="stack">IBM Rational Rose (UML design and code generation)</div>
+          <div class="stack">IBM Rational ClearCase (Configuration Management)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education">
+      <div class="heading">
+        <div class="hex-icon">
+          <div class="hex hex-border"></div>
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h3>EDUCATION</h3>
+        <hr />
+      </div>
+
+      <div class="institution">
+        <div class="heading">
+          <h4>
+            Instituto Superior Técnico
+            <a href="https://tecnico.ulisboa.pt/en/" target="_blank">https://tecnico.ulisboa.pt/en/</a>
+          </h4>
+
+          <div class="dates">
+            <i class="fa-solid fa-calendar-days"></i>
+            Sep 1996 - May 2004
+          </div>
+        </div>
+        <div class="area">Computers and Electronic Systems</div>
+      </div>
+      <div class="institution">
+        <div class="heading">
+          <h4>
+            Frei Gonçalo de Azevedo Secondary School
+            <a href="https://esfga.pt/expsitenovo/" target="_blank">https://esfga.pt/expsitenovo/</a>
+          </h4>
+
+          <div class="dates">
+            <i class="fa-solid fa-calendar-days"></i>
+            Jan 1987 - Jan 1996
+          </div>
+        </div>
+        <div class="area">Scientific and Natural course: Electrical / Electronic technological</div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
