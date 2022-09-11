@@ -121,6 +121,14 @@ select {
   .company {
     break-inside: avoid;
   }
+
+  .pdf-link {
+    display: none;
+  }
+
+  .qr-code {
+    display: block !important;
+  }
 }
 
 html,
@@ -129,6 +137,7 @@ body {
 }
 
 body {
+  height: 890mm;
   border: none;
   display: grid;
   color: var(--color-secondary);
@@ -184,6 +193,7 @@ section {
 summary {
   font-size: 1rem;
   line-height: 1.125;
+  padding-right: 1rem;
 }
 
 a {
@@ -434,6 +444,22 @@ sup {
 .hex-icon>i[class^="fa-"] {
   position: absolute;
 }
+
+.qr-code {
+  display: none;
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem auto;
+  background-color: var(--color-hexagon);
+}
+
+.pdf-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  width: 2rem;
+}
 </style>
 </head>
 
@@ -489,7 +515,7 @@ sup {
             <i class="fa-solid fa-globe"></i>
           </div>
           <div>
-            <a target="_blank" href="https://gitconnected.com/nricardo/resume?theme&amp;#x3D;zion">
+            <a target="_blank" href="https://gitconnected.com/nricardo/resume?theme&#x3D;zion">
               gitconnected.com/nricardo
               <sup>
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -837,6 +863,9 @@ sup {
           </a>
         </li>
       </ul>
+
+      <div class="qr-code">
+        <img src="assets/qr-code.svg" alt="QR-Code for online CV" title="Online CV" />
       </div>
     </section>
   </aside>
@@ -850,6 +879,11 @@ sup {
         </div>
         <h3>PROFILE</h3>
         <hr />
+        <div class="pdf-link">
+          <a href="https://nricardo.github.io/resume/nricardo.pdf" title="Download PDF">
+            <img src="assets/pdf.svg" alt="PDF logo" />
+          </a>
+        </div>
       </div>
 
       <summary> :: 👨‍💻 Experienced and motivated software engineer focused in web technologies :: <br>Design, architecture and implementation of web and mobile applications using the latest tools and best software practices.<br>Advocate of the Javascript language and its frameworks, currently focused in NodeJS and React / React Native.<br><br>Knowledge in software development processes, from requirements and analysis throughout design, implementation and testing.<br>Worked under R&D environment, doing requirement analysis and writing technical project documentation.<br><br>Professional experience in OO programming languages, such as C/C++ and Java, but always open to learning new ones and new software processes and methodologies.</summary>
